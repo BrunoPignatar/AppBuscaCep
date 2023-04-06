@@ -13,9 +13,7 @@ namespace AppBuscaCep.Service
     {
         public static async Task<Endereco> GetEnderecoByCep(string cep)
         {
-            Endereco end;
-
-            //Console.WriteLine("http://10.0.2.2:8000/endereco/by-cep?cep=" + cep);
+            Endereco end;  
 
             using (HttpClient client = new HttpClient())
             {
